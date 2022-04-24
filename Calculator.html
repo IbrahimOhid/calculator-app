@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/Calculator.css">
+    <script src="/Calculator.js"></script>
+  </head>
+  <body>
+    <div class="CalculatorBody">
+      <table>
+        <tr>
+          <td colspan="4"><input type="text" id="Result" /></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="C" style="background-color:#b700ff" onclick="RemoveCalculation()"></td>
+            <td><input type="button" value="(" style="background-color:#ff6600" onclick="Calculation('(')"></td>
+            <td><input type="button" value=")" style="background-color:#ff6600" onclick="Calculation(')')"></td>
+            <td><input type="button" value="" style="background-color:#ff6600"  onclick="Calculation('')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="7" onclick="Calculation('7')"></td>
+            <td><input type="button" value="8" onclick="Calculation('8')"></td>
+            <td><input type="button" value="9" onclick="Calculation('9')"></td>
+            <td><input type="button" value="+" style="background-color:#ff6600" onclick="Calculation('+')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="4" onclick="Calculation('4')"></td>
+            <td><input type="button" value="5" onclick="Calculation('5')"></td>
+            <td><input type="button" value="6" onclick="Calculation('6')"></td>
+            <td><input type="button" value="-" style="background-color:#ff6600" onclick="Calculation('-')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="1" onclick="Calculation('1')"></td>
+            <td><input type="button" value="2" onclick="Calculation('2')"></td>
+            <td><input type="button" value="3" onclick="Calculation('3')"></td>
+            <td><input type="button" value="*" style="background-color:#ff6600" onclick="Calculation('*')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="0" onclick="Calculation('0')"></td>
+            <td><input type="button" value="." style="background-color:#ff6600" onclick="Calculation('.')"></td>
+            <td><input type="button" value="/" style="background-color:#ff6600" onclick="Calculation('/')"></td>
+            <td><input type="button" value="=" style="background-color:#b700ff" onclick="Equation('')"></td>
+        </tr>
+
+      </table>
+    </div>
+  </body>
+</html>
